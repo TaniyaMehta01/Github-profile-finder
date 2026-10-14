@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dev Detective</h1>
+        <p>Search any GitHub user</p>
+    </header>
+
+    <main>
+        <div class="mode-buttons">
+            <button id="searchModeBtn" class="mode-btn active">Search</button>
+            <button id="battleModeBtn" class="mode-btn">Battle Mode</button>
+        </div>
+
+        <section id="searchSection">
+            <form id="searchForm" class="search-box">
+                <input type="text" id="usernameInput" placeholder="Enter GitHub username" autocomplete="off">
+                <button type="submit" id="searchBtn">Search</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <section id="battleSection" class="hidden">
+            <form id="battleForm" class="search-box battle-box">
+                <input type="text" id="userOneInput" placeholder="First username" autocomplete="off">
+                <span class="vs">VS</span>
+                <input type="text" id="userTwoInput" placeholder="Second username" autocomplete="off">
+                <button type="submit" id="battleBtn">Battle</button>
+            </form>
+            <div id="battleResult"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
